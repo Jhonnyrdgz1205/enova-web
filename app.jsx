@@ -471,8 +471,8 @@ function Footer() {
           <div className="footer-col">
             <h4>Contacto</h4>
             <p>San Salvador, El Salvador</p>
-            <a href="mailto:hola@enova-sv.com">hola@enova-sv.com</a>
-            <a href="tel:+50321234567">+503 2123 4567</a>
+            <a href="mailto:info@enova-sv.com">info@enova-sv.com</a>
+            <a href="tel:+50372852227">+503 7285 2227</a>
             <a href="#">@enova_sv</a>
           </div>
         </div>
@@ -487,9 +487,9 @@ function Footer() {
 
 // ===== TWEAKS =====
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-  "greenAccent": "#1F6B3A",
-  "bg": "#FAFAF7",
-  "ink": "#0E0E0C",
+  "greenAccent": "#C3F52D",
+  "bg": "#FFFFFF",
+  "ink": "#313030",
   "displayFont": "Instrument Serif",
   "showMarquee": true,
   "denseHero": false
