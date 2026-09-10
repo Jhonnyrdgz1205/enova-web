@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ENOVA — Energía solar para El Salvador</title>
+<meta name="description" content="ENOVA diseña e instala sistemas de energía solar residenciales y comerciales en El Salvador. Reduce tu factura, gana independencia energética.">
+
+<link rel="icon" type="image/png" href="images/logo-icon.png">
+<link rel="apple-touch-icon" href="images/logo-icon.png">
+<meta name="theme-color" content="#313030">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="ENOVA — Energía solar para El Salvador">
+<meta property="og:description" content="Diseñamos, instalamos y damos mantenimiento a sistemas de energía solar para hogares y empresas en El Salvador.">
+<meta property="og:image" content="images/logo-full.png">
+<meta property="og:url" content="https://www.enova-sv.com">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="sun-cursor" id="sunCursor" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo" aria-label="ENOVA, inicio">
+      <img src="images/logo-icon.png" width="34" height="34" alt="" class="logo-mark">
+      <span>ENOVA</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#calculadora">Calculadora</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto" class="nav-cta">Solicitar cotización</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="hero-kicker">Energía solar en El Salvador</p>
+      <h1 class="hero-title">
+        <span class="line" style="--d:0">El sol ya paga</span>
+        <span class="line" style="--d:1">tu factura.</span>
+        <span class="line" style="--d:2">Nosotros la instalamos.</span>
+      </h1>
+      <p class="hero-sub">
+        Diseñamos, instalamos y damos mantenimiento a sistemas fotovoltaicos para hogares y empresas.
+        Menos factura, más independencia, cero complicaciones.
+      </p>
+      <div class="hero-actions">
+        <a href="#calculadora" class="btn btn-primary">Calcula tu ahorro</a>
+        <a href="#contacto" class="btn btn-ghost">Hablar con un asesor</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-image" style="background-image:url('images/hero-sunset-panels.svg')"></div>
+      <svg class="sun-path" viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path id="sunArc" d="M20 220 C 100 20, 300 20, 380 220" stroke="#C3F52D" stroke-width="2" stroke-dasharray="6 8" fill="none"/>
+        <circle id="sunDot" r="7" fill="#C3F52D"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" id="stats">
+    <div class="stat">
+      <span class="stat-number" data-target="1200" data-suffix="+">0</span>
+      <span class="stat-label">paneles instalados</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number" data-target="35" data-suffix="%">0</span>
+      <span class="stat-label">ahorro promedio mensual</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number" data-target="15" data-suffix=" años">0</span>
+      <span class="stat-label">de garantía en equipos</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number" data-target="480" data-suffix=" t">0</span>
+      <span class="stat-label">de CO₂ evitadas al año</span>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="about" id="nosotros">
+    <div class="about-media">
+      <img src="images/field-crops.svg" alt="Siembra verde bajo cielo abierto en El Salvador" loading="lazy">
+    </div>
+    <div class="about-copy">
+      <h2>Creemos que la energía limpia debería ser lo normal, no la excepción.</h2>
+      <p>
+        ENOVA nació para cerrar la distancia entre El Salvador y el sol que recibe todos los días.
+        Trabajamos con familias, comercios e industrias que quieren dejar de depender de una tarifa
+        que solo sube, y empezar a generar su propia energía.
+      </p>
+      <p>
+        Cada proyecto pasa por el mismo estándar: paneles y microinversores certificados, instalación
+        supervisada por ingenieros locales, y monitoreo real del sistema una vez encendido.
+      </p>
+      <div class="about-points">
+        <div class="point"><span class="dot"></span>Ingeniería y diseño propio, adaptado al techo y consumo real</div>
+        <div class="point"><span class="dot"></span>Instalación con personal certificado, sin subcontratos anónimos</div>
+        <div class="point"><span class="dot"></span>Monitoreo remoto del sistema durante toda su vida útil</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="services" id="servicios">
+    <div class="section-head">
+      <h2>Un sistema solar, hecho a la medida de tu consumo</h2>
+      <p>No vendemos paneles sueltos. Diseñamos el sistema completo, del techo a la factura.</p>
+    </div>
+
+    <div class="service-grid">
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M8 18 L24 8 L40 18 V40 H8 Z" stroke="currentColor" stroke-width="2" fill="none"/><rect x="14" y="24" width="8" height="8" stroke="currentColor" stroke-width="2" fill="none"/><rect x="26" y="24" width="8" height="8" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+        </div>
+        <h3>Residencial</h3>
+        <p>Sistemas para casas y residenciales, dimensionados con tu consumo real de los últimos 12 meses.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><rect x="6" y="14" width="36" height="26" stroke="currentColor" stroke-width="2" fill="none"/><path d="M6 22 H42 M16 14 V40 M32 14 V40" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>Comercial e industrial</h3>
+        <p>Reducción de costo operativo para locales, plantas y bodegas con alto consumo diurno.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><rect x="16" y="6" width="16" height="36" rx="3" stroke="currentColor" stroke-width="2" fill="none"/><rect x="21" y="0" width="6" height="6" fill="currentColor"/><path d="M20 30 L23 22 L28 22 L25 30 Z" fill="currentColor"/></svg>
+        </div>
+        <h3>Baterías y respaldo</h3>
+        <p>Almacenamiento para seguir con energía durante cortes, sin depender solo de la red.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2" fill="none"/><path d="M24 14 V24 L31 28" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+        </div>
+        <h3>Mantenimiento y monitoreo</h3>
+        <p>Revisión periódica y monitoreo remoto para que el sistema rinda al máximo por años.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="process" id="proceso">
+    <div class="section-head light">
+      <h2>De la primera llamada al primer kilowatt</h2>
+      <p>Cuatro pasos, sin letra pequeña.</p>
+    </div>
+
+    <ol class="process-list">
+      <li class="process-step">
+        <span class="step-num">01</span>
+        <div>
+          <h3>Evaluación técnica</h3>
+          <p>Visitamos tu propiedad, revisamos tu factura y medimos tu techo y consumo real.</p>
+        </div>
+      </li>
+      <li class="process-step">
+        <span class="step-num">02</span>
+        <div>
+          <h3>Diseño y propuesta</h3>
+          <p>Recibes un sistema dimensionado a tu consumo, con retorno de inversión estimado en años y meses.</p>
+        </div>
+      </li>
+      <li class="process-step">
+        <span class="step-num">03</span>
+        <div>
+          <h3>Instalación</h3>
+          <p>Instalamos con personal certificado y gestionamos el trámite ante la distribuidora eléctrica.</p>
+        </div>
+      </li>
+      <li class="process-step">
+        <span class="step-num">04</span>
+        <div>
+          <h3>Monitoreo continuo</h3>
+          <p>Tu sistema queda conectado a monitoreo remoto: sabemos si algo cambia antes que tú lo notes.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- CALCULADORA -->
+  <section class="calculator" id="calculadora">
+    <div class="section-head">
+      <h2>¿Cuánto podrías ahorrar?</h2>
+      <p>Una estimación rápida basada en tu factura eléctrica actual.</p>
+    </div>
+
+    <div class="calc-box">
+      <div class="calc-inputs">
+        <label for="bill">Tu factura mensual actual</label>
+        <div class="input-money">
+          <span>$</span>
+          <input type="number" id="bill" min="20" max="2000" value="120" step="5">
+        </div>
+        <input type="range" id="billRange" min="20" max="1000" value="120" step="5">
+
+        <label for="rate" class="mt">Nivel de ahorro esperado</label>
+        <div class="rate-toggle" id="rateToggle">
+          <button type="button" class="rate-btn active" data-rate="0.9">Sistema completo — 90%</button>
+          <button type="button" class="rate-btn" data-rate="0.6">Sistema parcial — 60%</button>
+        </div>
+      </div>
+
+      <div class="calc-results">
+        <div class="result-card">
+          <span class="result-value" id="resMonthly">$0</span>
+          <span class="result-label">de ahorro estimado al mes</span>
+        </div>
+        <div class="result-card">
+          <span class="result-value" id="resYearly">$0</span>
+          <span class="result-label">de ahorro estimado al año</span>
+        </div>
+        <div class="result-card accent">
+          <span class="result-value" id="resPayback">0 años</span>
+          <span class="result-label">tiempo estimado de retorno</span>
+        </div>
+        <p class="calc-disclaimer">Estimación referencial. El ahorro real depende de tu consumo, ubicación y del sistema que diseñemos para ti.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS / TESTIMONIOS -->
+  <section class="projects" id="proyectos">
+    <div class="section-head light">
+      <h2>Proyectos que ya están generando</h2>
+    </div>
+
+    <div class="project-track">
+      <div class="project-card">
+        <img src="images/project-residential.svg" alt="Instalación solar residencial" loading="lazy">
+        <div class="project-info">
+          <h3>Residencia — Santa Tecla</h3>
+          <p>Sistema de 6.2 kW, 90% de reducción en factura mensual.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/project-commercial.svg" alt="Instalación solar comercial en techo" loading="lazy">
+        <div class="project-info">
+          <h3>Bodega comercial — San Salvador</h3>
+          <p>Sistema de 48 kW, retorno de inversión en 4.2 años.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/project-farm.svg" alt="Sistema solar en finca agrícola" loading="lazy">
+        <div class="project-info">
+          <h3>Finca agrícola — La Libertad</h3>
+          <p>Sistema de 22 kW con respaldo de baterías para riego.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="section-head">
+      <h2>Preguntas frecuentes</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>¿Cuánto tiempo toma la instalación?</summary>
+        <p>La mayoría de sistemas residenciales se instalan en 2 a 4 días. Proyectos comerciales varían según el tamaño del sistema.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Qué pasa si se va la luz?</summary>
+        <p>Sin baterías, el sistema se apaga por seguridad como cualquier sistema conectado a red. Con nuestro paquete de respaldo, las cargas esenciales de tu casa siguen funcionando.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿El sistema tiene garantía?</summary>
+        <p>Los paneles cuentan con garantía de hasta 15 años y los microinversores hasta 10 años, además de garantía de instalación por parte de ENOVA.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Necesito hacer algún trámite legal?</summary>
+        <p>Nosotros gestionamos el trámite de interconexión ante la distribuidora eléctrica correspondiente como parte del servicio.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final" id="contacto">
+    <div class="cta-inner">
+      <h2>Agenda tu evaluación técnica gratuita</h2>
+      <p>Sin compromiso. Un ingeniero revisa tu consumo y tu techo, y te dice si el sistema tiene sentido para ti.</p>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <input type="text" name="nombre" placeholder="Nombre completo" required>
+          <input type="tel" name="telefono" placeholder="Número de teléfono" required>
+        </div>
+        <div class="form-row">
+          <input type="email" name="correo" placeholder="Correo electrónico" required>
+          <input type="text" name="factura" placeholder="Factura mensual aprox. ($)">
+        </div>
+        <textarea name="mensaje" placeholder="Cuéntanos sobre tu propiedad o proyecto" rows="3"></textarea>
+        <button type="submit" class="btn btn-primary full">Solicitar cotización</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo">
+        <img src="images/logo-icon.png" width="28" height="28" alt="" class="logo-mark">
+        ENOVA
+      </span>
+      <p>Energía solar para El Salvador.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <p><a href="mailto:info@enova-sv.com">info@enova-sv.com</a></p>
+      <p><a href="tel:+50300000000">+503 0000-0000</a></p>
+      <p>San Salvador, El Salvador</p>
+    </div>
+    <div class="footer-col">
+      <h4>Síguenos</h4>
+      <p><a href="#" target="_blank" rel="noopener">Instagram</a></p>
+      <p><a href="#" target="_blank" rel="noopener">Facebook</a></p>
+      <p><a href="#" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> ENOVA. Todos los derechos reservados.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
