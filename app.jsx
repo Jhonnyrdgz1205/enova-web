@@ -432,7 +432,7 @@ function CTAFinal() {
           Hagamos tu próxima<br/>factura <em>la última.</em>
         </h2>
         <div style={{display:'flex', gap:14, justifyContent:'center', flexWrap:'wrap'}} className="reveal">
-          <a href="mailto:hola@enova-sv.com" className="btn btn-primary">
+          <a href="mailto:info@enova-sv.com" className="btn btn-primary">
             Solicitar cotización <Arrow/>
           </a>
           <a href="#" className="btn btn-ghost">
