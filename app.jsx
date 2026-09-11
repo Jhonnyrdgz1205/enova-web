@@ -120,7 +120,7 @@ function Hero() {
           <img src="images/field-01.png" alt="Campo verde al atardecer" />
           <div className="overlay"></div>
           <div className="hero-image-meta">
-            <span>RENOSA · Santa Ana</span>
+            <span>El Salvador · Santa Ana</span>
             <span>16.10 kWp instalados — 79% cobertura</span>
           </div>
         </div>
@@ -259,9 +259,9 @@ function Impact() {
 // ===== Proyectos =====
 function Projects() {
   const projects = [
-    { name: 'RENOSA Ilopango', meta: '16.10 kWp · 23 paneles', tag: 'Industrial', span: 'span-7', img: 'images/field-02.png' },
-    { name: 'RENOSA Santa Ana', meta: '8.05 kWp · 14 paneles', tag: 'Industrial', span: 'span-5', img: 'images/seedling.png' },
-    { name: 'Oficinas RENOSA SS', meta: '6.30 kWp · 9 paneles', tag: 'Comercial', span: 'span-5', img: 'images/field-01.png' },
+    { name: 'Ilopango', meta: '16.10 kWp · 23 paneles', tag: 'Industrial', span: 'span-7', img: 'images/field-02.png' },
+    { name: 'Santa Ana', meta: '8.05 kWp · 14 paneles', tag: 'Industrial', span: 'span-5', img: 'images/seedling.png' },
+    { name: 'Oficinas SS', meta: '6.30 kWp · 9 paneles', tag: 'Comercial', span: 'span-5', img: 'images/field-01.png' },
     { name: 'Residencia privada', meta: '5.20 kWp · 8 paneles', tag: 'Residencial', span: 'span-7', img: 'images/field-02.png' },
   ];
   return (
