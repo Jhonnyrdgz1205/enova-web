@@ -266,8 +266,8 @@ function Projects() {
   const projects = [
     { name: 'Ilopango', meta: '16.10 kWp · 23 paneles', tag: 'Industrial', span: 'span-7', img: 'images/field-02.png' },
     { name: 'Santa Ana', meta: '8.05 kWp · 14 paneles', tag: 'Industrial', span: 'span-5', img: 'images/seedling.png' },
-    { name: 'Oficinas SS', meta: '6.30 kWp · 9 paneles', tag: 'Comercial', span: 'span-5', img: 'images/field-01.png' },
-    { name: 'Residencia privada', meta: '5.20 kWp · 8 paneles', tag: 'Residencial', span: 'span-7', img: 'images/field-02.png' },
+    { name: 'San Salvador', meta: '6.30 kWp · 9 paneles', tag: 'Comercial', span: 'span-5', img: 'images/field-01.png' },
+    { name: 'Residencia privada', meta: '3.63 kWp · 6 paneles', tag: 'Residencial', span: 'span-7', img: 'images/field-02.png' },
   ];
   return (
     <section className="section projects" id="proyectos">
@@ -275,7 +275,7 @@ function Projects() {
         <div className="section-head reveal">
           <div>
             <div className="eyebrow eyebrow-dot" style={{marginBottom: 24}}>Proyectos</div>
-            <h2>Trabajos<br/>en <em>movimiento.</em></h2>
+            <h2>Trabajos<br/>ya <em>produciendo.</em></h2>
           </div>
           <p className="lede">
             Una muestra de los sistemas que hemos diseñado e instalado a lo largo de El Salvador. Cada uno hecho a medida.
@@ -321,7 +321,7 @@ function Calculator() {
         <div className="section-head reveal" style={{marginBottom: 56}}>
           <div>
             <div className="eyebrow eyebrow-dot" style={{marginBottom: 24}}>Calculadora</div>
-            <h2 style={{color: 'var(--bg)'}}>Tu ahorro,<br/><em style={{color: 'var(--green-bright)'}}>en números.</em></h2>
+            <h2 style={{color: 'var(--bg)'}}>Tu decisión,<br/><em style={{color: 'var(--green-bright)'}}>en números.</em></h2>
           </div>
           <p className="lede" style={{color: 'rgba(250,250,247,0.7)'}}>
             Una estimación rápida basada en tu factura mensual. Para un cálculo preciso, agendamos una visita técnica sin costo.
