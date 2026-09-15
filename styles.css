@@ -876,7 +876,14 @@ section { position: relative; }
   transform: none;
 }
 
-/* ===== Subrayado global ===== */
-a, u {
-  text-decoration-color: #C3F52D !important; /* subrayado verde */
+/* ===== Color de selección de texto ===== */
+::selection {
+  background: #C3F52D;   /* el sombreado verde de tu marca */
+  color: #313030;        /* el texto se verá gris oscuro */
+}
+
+/* Para navegadores WebKit (Safari, Chrome antiguos) */
+::-moz-selection {
+  background: #C3F52D;
+  color: #313030;
 }
