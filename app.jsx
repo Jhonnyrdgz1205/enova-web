@@ -92,18 +92,18 @@ function Hero() {
           <div>
             <div className="eyebrow eyebrow-dot" style={{marginBottom: 28}}>Energía solar — El Salvador</div>
             <h1 className="display hero-title">
-              El sol<br/>
-              <em>trabaja</em><br/>
+              Que el sol<br/>
+              <em>trabaje</em><br/>
               para ti.
             </h1>
           </div>
           <div className="hero-meta">
             <div className="hero-loc">
               <span className="pulse"></span>
-              13.69° N · 89.21° W — San Salvador
+              13.68° N · 89.30° W — El Salvador
             </div>
             <p className="hero-lede">
-              Diseñamos e instalamos sistemas fotovoltaicos a la medida. Reducimos tu factura, multiplicamos tu autonomía y dejamos algo mejor en el planeta. Cada panel es un acuerdo con el futuro.
+              Consume energía de una forma más eficiente, paga menos por electricidad y convierte el sol en una ventaja para tu futuro.
             </p>
             <div className="hero-actions">
               <a href="#contacto" className="btn btn-primary">
@@ -163,7 +163,7 @@ function Services() {
             <h2>Soluciones<br/><em>integrales.</em></h2>
           </div>
           <p className="lede">
-            Desde el primer estudio hasta el reporte mensual del año cinco, te acompañamos en cada paso de la transición a energía solar.
+            Diseñamos e instalamos sistemas fotovoltaicos a la medida. Reducimos tu factura, multiplicamos tu autonomía y cuidamos de tu sistema para el día de mañana.
           </p>
         </div>
 
