@@ -121,7 +121,7 @@ function Hero() {
         </div>
 
         <div className="hero-image reveal">
-          <img src="images/field-01.png" alt="Campo verde al atardecer" />
+          <img src="/Inspo portada oferta.webp" alt="Campo verde al atardecer" />
           <div className="overlay"></div>
           <div className="hero-image-meta">
             <span>El Salvador · Santa Ana</span>
