@@ -179,7 +179,7 @@ section { position: relative; }
 @media (max-width: 768px) {
   .hero {
     background: radial-gradient(circle at top right,
-      rgba(195,245,45,0.05) 0%,   /* verde muy tenue */
+      rgba(195,245,45,0.20) 20%,   /* verde muy tenue */
       var(--bg) 30%               /* se corta rápido */
     );
   }
