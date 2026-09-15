@@ -191,12 +191,12 @@ function Services() {
 // ===== Proceso =====
 function Process() {
   const steps = [
-    { n: '01', title: 'Estudio energético', desc: 'Analizamos tu consumo, sitio e infraestructura para dimensionar el sistema óptimo.', t: '1 semana' },
-    { n: '02', title: 'Propuesta & diseño', desc: 'Proyección de ahorro, retorno de inversión y diseño técnico detallado.', t: '1 semana' },
+    { n: '01', title: 'Estudio energético', desc: 'Analizamos tu consumo, sitio e infraestructura para dimensionar el sistema óptimo.', t: '1-2 semanas' },
+    { n: '02', title: 'Propuesta & diseño', desc: 'Proyección de ahorro, retorno de inversión y diseño técnico detallado.', t: '1-2 semanas' },
     { n: '03', title: 'Permisos & trámites', desc: 'Gestionamos la documentación con la distribuidora y entes reguladores.', t: '2 – 3 semanas' },
-    { n: '04', title: 'Instalación', desc: 'Montaje certificado de paneles, inversores y protecciones eléctricas.', t: '2 – 3 semanas' },
-    { n: '05', title: 'Cambio de medidor', desc: 'Coordinación final con la distribuidora y puesta en marcha del sistema.', t: '2 – 3 semanas' },
-    { n: '06', title: 'Operación & monitoreo', desc: '12 meses de monitoreo remoto sin costo, con atención personalizada.', t: 'continuo' },
+    { n: '04', title: 'Instalación', desc: 'Montaje certificado de paneles, inversores y protecciones eléctricas.', t: '1 semana' },
+    { n: '05', title: 'Cambio de medidor', desc: 'Coordinación final con la distribuidora y puesta en marcha del sistema.', t: 'Dependerá de distribuidora' },
+    { n: '06', title: 'Operación & monitoreo', desc: 'Toma el control de tu energía con monitoreo desde cualquier lugar.', t: 'continuo' },
   ];
   return (
     <section className="section process" id="proceso">
@@ -204,7 +204,7 @@ function Process() {
         <div className="section-head reveal">
           <div>
             <div className="eyebrow eyebrow-dot" style={{marginBottom: 24}}>Cómo trabajamos</div>
-            <h2>De propuesta<br/>a <em>kWh limpios.</em></h2>
+            <h2>De propuesta<br/>a <em>energía limpia.</em></h2>
           </div>
           <p className="lede">
             Un proceso claro, sin sorpresas. Tomamos los trámites, la ingeniería y la coordinación —tú solo verás cómo baja la factura.
