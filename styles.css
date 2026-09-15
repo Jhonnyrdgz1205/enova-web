@@ -119,18 +119,10 @@ section { position: relative; }
   font-size: 14px;
 }
 .brand-mark {
-  width: 28px; height: 28px;
-  border-radius: 50%;
-  background: var(--ink);
-  position: relative;
-  overflow: hidden;
-}
-.brand-mark::before {
-  content: "";
-  position: absolute;
-  inset: 4px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, var(--green-bright), var(--green) 60%, var(--green-deep));
+  width: 28px;
+  height: 28px;
+  border-radius: 50%; /* mantiene la forma circular */
+  overflow: hidden;   /* recorta la imagen dentro del círculo */
 }
 .nav-links {
   display: flex;
