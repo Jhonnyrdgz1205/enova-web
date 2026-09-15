@@ -50,11 +50,16 @@ const ToolsIcon = () => (
 function Brand() {
   return (
     <a href="#" className="brand">
-      <span className="brand-mark"></span>
+      <img 
+        src="/Logo circulo.png" 
+        alt="Logo ENOVA" 
+        className="brand-mark" 
+      />
       <span>ENOVA</span>
     </a>
   );
 }
+
 
 // ===== NAV =====
 function Nav() {
