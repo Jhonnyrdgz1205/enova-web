@@ -173,6 +173,7 @@ section { position: relative; }
 .hero {
   padding: 140px 0 80px;
   position: relative;
+  background: radial-gradient(circle, rgba(195,245,45,0.45), transparent 60%);
 }
 .hero-grid {
   display: grid;
