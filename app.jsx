@@ -540,7 +540,9 @@ function App() {
       <CTAFinal />
       <Footer />
       <button id="scrollTopBtn" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-      </button>
+  ↑
+</button>
+
 
       {window.TweaksPanel && (
         <window.TweaksPanel title="Tweaks">
