@@ -440,7 +440,7 @@ function CTAFinal() {
           <a href="mailto:info@enova-sv.com" className="btn btn-primary">
             Solicitar cotización <Arrow/>
           </a>
-          <a href="#" className="btn btn-ghost">
+          <a href="https://wa.me/50372852227" className="btn btn-ghost">
             WhatsApp directo
           </a>
         </div>
