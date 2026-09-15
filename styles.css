@@ -179,7 +179,7 @@ section { position: relative; }
 /* Pantallas pequeñas (teléfono) */
 @media (max-width: 768px) {
   .landing {
-    background: radial-gradient(circle at top right, rgba(195,245,45,1), transparent 10%);
+    background: radial-gradient(circle at top right, rgba(195,245,45,.10), transparent 10%);
   }
 }
 
