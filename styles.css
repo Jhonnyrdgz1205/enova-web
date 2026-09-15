@@ -173,15 +173,15 @@ section { position: relative; }
 .hero {
   padding: 140px 0 80px;
   position: relative;
-  background: radial-gradient(circle at top right, rgba(195,245,45,0.45), transparent 60%);
+  background: radial-gradient(circle at top right, rgba(195,245,45,0.45), transparent 40%);
 }
 
 /* Pantallas pequeñas (teléfono) */
 @media (max-width: 768px) {
   .landing {
     background: radial-gradient(circle at top right,
-      rgba(195,245,45,0.000005) 0%,   /* verde muy tenue */
-      var(--bg) 0.0005%               /* se corta rápido */
+      rgba(195,245,45,1) 100%,   /* verde muy tenue */
+      var(--bg) 100%               /* se corta rápido */
     );
   }
 }
