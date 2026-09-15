@@ -810,9 +810,10 @@ section { position: relative; }
 .brand span:last-child {
   font-family: var(--serif);   /* usa la misma fuente que el footer */
   font-style: italic;          /* cursiva */
-  font-size: 28px;             /* ajusta según tu diseño */
+  font-size: 18px;             /* ajusta según tu diseño */
   line-height: 1.1;
   color: var(--ink);           /* color de tu marca */
+  text-transform: capitalize; 
 }
 
 .footer-top {
