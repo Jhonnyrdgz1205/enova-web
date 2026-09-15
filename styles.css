@@ -180,7 +180,7 @@ section { position: relative; }
 @media (max-width: 768px) {
   .landing {
     background: radial-gradient(circle at top right,
-      rgba(195,245,45,1) 100%,   /* verde muy tenue */
+      rgba(10,15,230,1) 100%,   /* verde muy tenue */
       var(--bg) 100%               /* se corta rápido */
     );
   }
