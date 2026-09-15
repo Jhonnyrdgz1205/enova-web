@@ -55,7 +55,7 @@ function Brand() {
         alt="Logo ENOVA" 
         className="brand-mark" 
       />
-      <span>ENOVA</span>
+      <span>Enova</span>
     </a>
   );
 }
