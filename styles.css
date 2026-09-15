@@ -892,27 +892,9 @@ section { position: relative; }
 /* ===== Botón scroll-to-top ===== */
 #scrollTopBtn {
   position: fixed;
-  bottom: 20px;       /* distancia desde abajo */
-  right: 20px;        /* distancia desde la derecha */
-  background: var(--green); /* tu verde de marca */
-  color: var(--bg);   /* texto blanco o el que uses */
-  border: none;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  font-size: 24px;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  display: none;      /* oculto por defecto */
-  z-index: 999;       /* siempre encima */
-}
-
-/* ===== Botón scroll-to-top ===== */
-#scrollTopBtn {
-  position: fixed;
   bottom: 20px;
   right: 20px;
-  background: var(--green); /* tu verde de marca */
+  background: var(--green);
   color: var(--bg);
   border: none;
   border-radius: 50%;
@@ -923,8 +905,10 @@ section { position: relative; }
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   display: none; /* oculto por defecto */
   z-index: 999;
+  transition: background 0.3s, transform 0.3s;
 }
 
 #scrollTopBtn:hover {
-  background: #A8E63D; /* verde más claro al pasar el mouse */
+  background: #A8E63D;
+  transform: scale(1.1);
 }
