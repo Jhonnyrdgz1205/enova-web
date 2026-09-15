@@ -176,12 +176,6 @@ section { position: relative; }
   background: radial-gradient(circle at top right, rgba(195,245,45,0.45), transparent 80%);
 }
 
-/* Ajuste para pantallas pequeñas (teléfono) */
-@media (max-width: 768px) {
-  .landing {
-    background: radial-gradient(circle at top right, rgba(195,245,45,0.45), transparent 60%);
-  }
-}
 .hero-grid {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
