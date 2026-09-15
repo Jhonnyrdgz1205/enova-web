@@ -353,7 +353,7 @@ function Calculator() {
               </div>
             </div>
 
-            <div className="calc-row" style={{paddingTop: 8, borderTop: '1px solid rgba(250,250,247,0.1)', marginTop: 32}}>
+            <div className="calc-row" style={{paddingTop: 8, borderTop: '10px solid rgba(250,250,247,0.1)', marginTop: 32}}>
               <a href="#contacto" className="btn btn-primary" style={{background: 'var(--bg)', color: 'var(--ink)'}}>
                 Solicitar propuesta detallada <Arrow/>
               </a>
