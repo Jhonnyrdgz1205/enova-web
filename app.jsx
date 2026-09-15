@@ -92,7 +92,7 @@ function Hero() {
           <div>
             <div className="eyebrow eyebrow-dot" style={{marginBottom: 28}}>Energía solar — El Salvador</div>
             <h1 className="display hero-title">
-              Que el sol<br/>
+              Haz que el sol<br/>
               <em>trabaje</em><br/>
               para ti.
             </h1>
