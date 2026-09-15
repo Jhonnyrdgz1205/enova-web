@@ -171,7 +171,7 @@ section { position: relative; }
 
 /* ===== HERO ===== */
 .hero {
-  padding: 140px 0 350px;
+  padding: 140px 0 80px;
   position: relative;
   background: radial-gradient(circle at top right, rgba(195,245,45,0.45), transparent 60%);
 }
