@@ -179,9 +179,14 @@ section { position: relative; }
 /* Pantallas pequeñas (teléfono) */
 @media (max-width: 768px) {
   .landing {
-    background: radial-gradient(circle at top right, rgba(195,245,45,.10), transparent 10%);
+    background: radial-gradient(circle at top right,
+      rgba(195,245,45,0.05) 0%,   /* verde muy tenue al inicio */
+      rgba(195,245,45,0.02) 20%,  /* casi transparente rápido */
+      transparent 40%             /* se desvanece pronto */
+    );
   }
 }
+
 
 .hero-grid {
   display: grid;
