@@ -180,14 +180,11 @@ section { position: relative; }
 @media (max-width: 768px) {
   .landing {
     background: radial-gradient(circle at top right,
-      rgba(195,245,45,0.05) 0%,   /* verde muy tenue */
-      var(--bg) 20%               /* se corta rápido */
+      rgba(195,245,45,0.005) 0%,   /* verde muy tenue */
+      var(--bg) 5%               /* se corta rápido */
     );
   }
 }
-
-
-
 
 .hero-grid {
   display: grid;
