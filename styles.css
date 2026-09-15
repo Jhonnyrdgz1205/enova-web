@@ -875,9 +875,3 @@ section { position: relative; }
   opacity: 1;
   transform: none;
 }
-
-/* ===== Subrayados globales ===== */
-a, u, .underline {
-  color: #313030 !important;              /* texto siempre gris oscuro */
-  text-decoration-color: #C3F52D !important; /* subrayado verde de marca */
-}
