@@ -155,9 +155,9 @@ function Services() {
     { n: '01', title: 'Sistemas fotovoltaicos', icon: <PanelIcon/>,
       desc: 'Diseño e instalación llave en mano para residencias, comercios e industrias. Paneles tier-1, inversores certificados y estructuras a medida.' },
     { n: '02', title: 'Monitoreo & operación', icon: <SunIcon/>,
-      desc: 'Visualización en tiempo real desde tu dispositivo. Reportes técnicos, alertas y atención personalizada durante el primer año.' },
+      desc: 'Visualización en tiempo real desde tu dispositivo. Reportes técnicos, alertas y atención personalizada a tu disposición.' },
     { n: '03', title: 'Mantenimiento preventivo', icon: <ToolsIcon/>,
-      desc: 'Programa anual con limpieza, termografía e inspección eléctrica. Tu sistema rinde como el día uno, año tras año.' },
+      desc: 'Servicio de limpieza, termografía e inspección eléctrica. Tu sistema rindiendo siempre en óptimas condiciones.' },
   ];
   return (
     <section className="section services" id="servicios">
