@@ -553,3 +553,20 @@ function App() {
 }
 
 window.App = App;
+<button id="scrollTopBtn" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+  ↑
+</button>
+
+useEffect(() => {
+  const btn = document.getElementById("scrollTopBtn");
+  const toggleBtn = () => {
+    if (window.scrollY > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+  window.addEventListener("scroll", toggleBtn);
+  return () => window.removeEventListener("scroll", toggleBtn);
+}, []);
+
