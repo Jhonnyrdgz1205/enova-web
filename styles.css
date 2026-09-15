@@ -875,3 +875,8 @@ section { position: relative; }
   opacity: 1;
   transform: none;
 }
+
+/* ===== Subrayado global ===== */
+a, u {
+  text-decoration-color: #C3F52D !important; /* subrayado verde */
+}
