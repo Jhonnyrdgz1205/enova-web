@@ -876,38 +876,8 @@ section { position: relative; }
   transform: none;
 }
 
-/* ===== Subrayados personalizados ===== */
-
-/* Texto normal (#313030) con subrayado verde de marca */
+/* ===== Subrayados globales ===== */
 a, u, .underline {
-  color: #313030;
-  text-decoration-color: #C3F52D;
-}
-
-/* Texto verde de marca con subrayado gris */
-.text-brand {
-  color: #C3F52D;
-  text-decoration-color: #7A7A7A;
-}
-
-/* Subrayado sólido personalizado */
-a.custom-underline {
-  color: #313030;
-  text-decoration: none;
-  box-shadow: inset 0 -2px 0 #C3F52D;
-}
-
-.text-brand.custom-underline {
-  color: #C3F52D;
-  box-shadow: inset 0 -2px 0 #7A7A7A;
-}
-
-/* Subrayado con gradiente de la paleta */
-a.gradient-underline {
-  color: #313030;
-  text-decoration: none;
-  background-image: linear-gradient(to right, #C3F52D, #EEF9D6);
-  background-repeat: no-repeat;
-  background-size: 100% 2px;
-  background-position: 0 100%;
+  color: #313030 !important;              /* texto siempre gris oscuro */
+  text-decoration-color: #C3F52D !important; /* subrayado verde de marca */
 }
