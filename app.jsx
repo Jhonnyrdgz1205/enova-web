@@ -457,7 +457,7 @@ function Footer() {
         <div className="footer-top">
           <div className="footer-col footer-brand">
             <Brand/>
-            <p>Energía solar diseñada para durar. Hecha en El Salvador, pensada para el planeta.</p>
+            <p>Hecha en El Salvador, pensada para el planeta.</p>
           </div>
           <div className="footer-col">
             <h4>Servicios</h4>
@@ -482,8 +482,8 @@ function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© 2026 Enova S.A. de C.V.</span>
-          <span>Hecho con sol ☼</span>
+          <span>© Enova S.A.S. de C.V. Todos los derechos reservados</span>
+          <span>Diseño web: Anthopic @ Claude</span>
         </div>
       </div>
     </footer>
