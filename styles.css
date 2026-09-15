@@ -805,6 +805,16 @@ section { position: relative; }
   color: var(--bg);
   padding: 80px 0 40px;
 }
+
+/* ===== Logo ===== */
+.brand span:last-child {
+  font-family: var(--serif);   /* usa la misma fuente que el footer */
+  font-style: italic;          /* cursiva */
+  font-size: 28px;             /* ajusta según tu diseño */
+  line-height: 1.1;
+  color: var(--ink);           /* color de tu marca */
+}
+
 .footer-top {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
