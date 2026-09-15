@@ -381,7 +381,7 @@ section { position: relative; }
   border-radius: 50%;
   display: grid;
   place-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .service h3 {
   font-family: var(--serif);
