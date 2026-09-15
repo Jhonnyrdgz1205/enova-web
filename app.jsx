@@ -478,12 +478,12 @@ function Footer() {
             <p>San Salvador, El Salvador</p>
             <a href="mailto:info@enova-sv.com">info@enova-sv.com</a>
             <a href="tel:+50372852227">+503 7285 2227</a>
-            <a href="#">@enova_sv</a>
+            <a href="https://www.instagram.com/enova.sv?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==">@enova_sv</a>
           </div>
         </div>
         <div className="footer-bottom">
           <span>© Enova S.A.S. de C.V. Todos los derechos reservados</span>
-          <span>Diseño web: Anthopic @ Claude</span>
+          <span>Anthropic @ Claude</span>
         </div>
       </div>
     </footer>
