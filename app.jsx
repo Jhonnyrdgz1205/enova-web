@@ -512,6 +512,20 @@ function App() {
     r.setProperty('--ink', tweaks.ink);
     r.setProperty('--serif', `'${tweaks.displayFont}', serif`);
   }, [tweaks]);
+  
+  // Mostrar/ocultar botón según scroll
+  useEffect(() => {
+    const btn = document.getElementById("scrollTopBtn");
+    const toggleBtn = () => {
+      if (window.scrollY > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+    window.addEventListener("scroll", toggleBtn);
+    return () => window.removeEventListener("scroll", toggleBtn);
+  }, []);
 
   return (
     <>
@@ -526,38 +540,11 @@ function App() {
       <CTAFinal />
       <Footer />
       <button id="scrollTopBtn" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-        ↑
       </button>
 
       {window.TweaksPanel && (
         <window.TweaksPanel title="Tweaks">
           {/* ... */}
-        </window.TweaksPanel>
-      )}
-    </>
-  );
-}
-
-      {window.TweaksPanel && (
-        <window.TweaksPanel title="Tweaks">
-          <window.TweakSection title="Color">
-            <window.TweakColor label="Verde acento" value={tweaks.greenAccent}
-              onChange={v => setTweak('greenAccent', v)}/>
-            <window.TweakColor label="Fondo" value={tweaks.bg}
-              onChange={v => setTweak('bg', v)}/>
-            <window.TweakColor label="Tinta" value={tweaks.ink}
-              onChange={v => setTweak('ink', v)}/>
-          </window.TweakSection>
-          <window.TweakSection title="Tipografía display">
-            <window.TweakSelect label="Fuente serif" value={tweaks.displayFont}
-              options={[
-                {value:'Instrument Serif', label:'Instrument Serif'},
-                {value:'Fraunces', label:'Fraunces'},
-                {value:'Cormorant Garamond', label:'Cormorant'},
-                {value:'EB Garamond', label:'EB Garamond'},
-              ]}
-              onChange={v => setTweak('displayFont', v)}/>
-          </window.TweakSection>
         </window.TweaksPanel>
       )}
     </>
