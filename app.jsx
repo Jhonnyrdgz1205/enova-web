@@ -341,10 +341,10 @@ function Calculator() {
   const co2YearKg = (parseFloat(systemKWp) * 1300).toFixed(0); // ~1.3 t/kWp/año
 
   // Cada panel de 630W equivale a 7 árboles sembrados, a lo largo de su vida útil (25 años).
-  const TREES_PER_PANEL = 7;
+  const TREES_PER_PANEL = 9;
   const treesTotal25y = panelsNeeded * TREES_PER_PANEL;
 
-  const payback = 2.8;
+  const payback = 3.0;
 
   const fmt = (n) => Number(n).toLocaleString('en-US');
 
