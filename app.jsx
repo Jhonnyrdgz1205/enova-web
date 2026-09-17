@@ -306,8 +306,8 @@ function Calculator() {
   // Rate promedio SV ~$0.22/kWh; producción ~130 kWh/mes por kWp instalado.
   const RANGES = {
     residencial: { min: 150, max: 500,  step: 10,  coverage: 0.80 },
-    comercial:   { min: 600, max: 1500, step: 50,  coverage: 0.75 },
-    industrial:  { min: 1600, max: 7000, step: 100, coverage: 0.70 },
+    comercial:   { min: 600, max: 1500, step: 50,  coverage: 0.80 },
+    industrial:  { min: 1600, max: 7000, step: 100, coverage: 0.80 },
   };
 
   const [type, setType] = useState('residencial');
