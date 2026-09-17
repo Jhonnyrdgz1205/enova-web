@@ -398,7 +398,7 @@ function Calculator() {
               <div className="stat-label">Ahorro mensual estimado</div>
               <div className="stat-val"><em>${monthlySavings.toFixed(0)}</em></div>
               <div className="stat-sub">≈ ${fmt(yearSavings)} al año en factura eléctrica.</div>
-              <div className="stat-sub" style={{marginTop: 4}}>≈ ${fmt(savings25y)} acumulado en 25 años (referencial).</div>
+              <div className="stat-sub" style={{marginTop: 4}}>≈ ${fmt(savings25y)} ahorrado en 25 años (vida útil del sistema).</div>
             </div>
             <div className="calc-stat">
               <div className="stat-label">Tamaño de sistema sugerido</div>
