@@ -302,17 +302,51 @@ function Projects() {
 
 // ===== Calculadora =====
 function Calculator() {
-  const [bill, setBill] = useState(150);
-  const [type, setType] = useState('residencial');
+  // Rangos, cobertura de ahorro y paso del slider por categoría.
+  // Rate promedio SV ~$0.22/kWh; producción ~130 kWh/mes por kWp instalado.
+  const RANGES = {
+    residencial: { min: 150, max: 500,  step: 10,  coverage: 0.80 },
+    comercial:   { min: 600, max: 1500, step: 50,  coverage: 0.75 },
+    industrial:  { min: 1600, max: 7000, step: 100, coverage: 0.70 },
+  };
 
-  // Rough estimates derived from the proposal:
-  // Avg electricity rate in SV ~ $0.22/kWh; coverage ~75%
-  const coverage = type === 'industrial' ? 0.78 : (type === 'comercial' ? 0.72 : 0.70);
+  const [type, setType] = useState('residencial');
+  const [bill, setBill] = useState(RANGES.residencial.min);
+
+  const cfg = RANGES[type];
+  const coverage = cfg.coverage;
+
+  // Cambia de categoría y reubica la factura dentro del nuevo rango.
+  const handleTypeChange = (t) => {
+    setType(t);
+    setBill(RANGES[t].min);
+  };
+
+  const rate = 0.22;
+  const kWhPerKwpMonth = 130;
+
   const monthlySavings = bill * coverage;
-  const kWp = (bill / 0.22 * coverage / 130).toFixed(1); // ~130 kWh/mo per kWp in SV
-  const co2YearKg = (parseFloat(kWp) * 1300).toFixed(0); // ~1.3 t/kWp/yr
-  const payback = 2.8;
   const yearSavings = (monthlySavings * 12).toFixed(0);
+  const savings25y = (monthlySavings * 12 * 25).toFixed(0);
+
+  // kWp necesarios para cubrir el % de ahorro objetivo con la factura actual.
+  const requiredKWp = (bill / rate) * coverage / kWhPerKwpMonth;
+
+  // Todo el sistema se arma en paneles de 630W (0.63 kWp).
+  const PANEL_WATT = 630;
+  const PANEL_KWP = PANEL_WATT / 1000;
+  const panelsNeeded = Math.max(1, Math.ceil(requiredKWp / PANEL_KWP));
+  const systemKWp = (panelsNeeded * PANEL_KWP).toFixed(2);
+
+  const co2YearKg = (parseFloat(systemKWp) * 1300).toFixed(0); // ~1.3 t/kWp/año
+
+  // Cada panel de 630W equivale a 7 árboles sembrados, a lo largo de su vida útil (25 años).
+  const TREES_PER_PANEL = 7;
+  const treesTotal25y = panelsNeeded * TREES_PER_PANEL;
+
+  const payback = 2.8;
+
+  const fmt = (n) => Number(n).toLocaleString('en-US');
 
   return (
     <section className="section calc" id="calculadora">
@@ -333,7 +367,7 @@ function Calculator() {
               <label>Tipo de consumo</label>
               <div className="seg">
                 {['residencial','comercial','industrial'].map(t => (
-                  <button key={t} className={type === t ? 'active' : ''} onClick={() => setType(t)}>
+                  <button key={t} className={type === t ? 'active' : ''} onClick={() => handleTypeChange(t)}>
                     {t.charAt(0).toUpperCase() + t.slice(1)}
                   </button>
                 ))}
@@ -343,12 +377,12 @@ function Calculator() {
             <div className="calc-row">
               <label>
                 Factura mensual promedio
-                <span className="val">${bill}</span>
+                <span className="val">${fmt(bill)}</span>
               </label>
-              <input className="calc-slider" type="range" min="60" max="1500" step="10"
+              <input className="calc-slider" type="range" min={cfg.min} max={cfg.max} step={cfg.step}
                 value={bill} onChange={e => setBill(parseInt(e.target.value))} />
               <div style={{display:'flex', justifyContent:'space-between', fontFamily:'var(--mono)', fontSize:11, color:'rgba(250,250,247,0.4)', letterSpacing:'0.1em', marginTop:8}}>
-                <span>$60</span><span>$1,500</span>
+                <span>${fmt(cfg.min)}</span><span>${fmt(cfg.max)}</span>
               </div>
             </div>
 
@@ -363,12 +397,13 @@ function Calculator() {
             <div className="calc-stat">
               <div className="stat-label">Ahorro mensual estimado</div>
               <div className="stat-val"><em>${monthlySavings.toFixed(0)}</em></div>
-              <div className="stat-sub">≈ ${yearSavings} al año en factura eléctrica.</div>
+              <div className="stat-sub">≈ ${fmt(yearSavings)} al año en factura eléctrica.</div>
+              <div className="stat-sub" style={{marginTop: 4}}>≈ ${fmt(savings25y)} acumulado en 25 años (referencial).</div>
             </div>
             <div className="calc-stat">
               <div className="stat-label">Tamaño de sistema sugerido</div>
-              <div className="stat-val">{kWp} <em style={{fontSize: 32}}>kWp</em></div>
-              <div className="stat-sub">Cobertura aproximada del {(coverage*100).toFixed(0)}% de tu consumo.</div>
+              <div className="stat-val">{systemKWp} <em style={{fontSize: 32}}>kWp</em></div>
+              <div className="stat-sub">{panelsNeeded} paneles de 630W · cobertura aproximada del {(coverage*100).toFixed(0)}% de tu consumo.</div>
             </div>
             <div className="calc-stat">
               <div className="stat-label">Retorno de inversión</div>
@@ -378,7 +413,7 @@ function Calculator() {
             <div className="calc-stat">
               <div className="stat-label">CO₂ evitado / año</div>
               <div className="stat-val">{(co2YearKg/1000).toFixed(1)} <em style={{fontSize: 32}}>t</em></div>
-              <div className="stat-sub">Equivalente a plantar {Math.round(co2YearKg/22)} árboles cada año.</div>
+              <div className="stat-sub">Equivalente a plantar {fmt(treesTotal25y)} árboles en 25 años (vida útil del sistema).</div>
             </div>
           </div>
         </div>
@@ -386,7 +421,6 @@ function Calculator() {
     </section>
   );
 }
-
 // ===== Sobre =====
 function About() {
   return (
