@@ -1,7 +1,6 @@
 /* ===== ENOVA — Sistema de diseño ===== */
 
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 :root {
   /* Colors */
   --bg: #FAFAF7;
@@ -120,11 +119,9 @@ section { position: relative; }
   font-size: 14px;
 }
 .brand span {
-  font-family: var(--serif);
+  font-family: 'Alice', serif;
   font-size: 28px;
-  font-weight: 595;
-  letter-spacing: -0.02em;
-  text-transform: none;
+  letter-spacing: -0.01em;
 }
 
 .brand-mark {
