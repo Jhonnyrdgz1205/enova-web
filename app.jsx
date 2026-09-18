@@ -64,6 +64,7 @@ function Brand() {
 // ===== NAV =====
 function Nav() {
   const [scrolled, setScrolled] = useState(false);
+  const { openLeadModal } = window.useLeadModal ? window.useLeadModal() : { openLeadModal: () => {} };
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     window.addEventListener('scroll', onScroll);
@@ -81,7 +82,7 @@ function Nav() {
           <a href="#calculadora">Ahorro</a>
           <a href="#sobre">Sobre nosotros</a>
         </div>
-        <a href="#contacto" className="nav-cta">
+        <a href="# => { e.preventDefault(); openLeadModal('Navbar'); }}>" className="nav-cta">
           Cotizar <Arrow size={12} />
         </a>
       </div>
