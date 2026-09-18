@@ -564,7 +564,8 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
 function App() {
   useReveal();
   const [tweaks, setTweak] = window.useTweaks ? window.useTweaks(TWEAK_DEFAULTS) : [TWEAK_DEFAULTS, () => {}];
-
+  const LeadProvider = window.LeadModalProvider || (({ children }) => children);
+  const Modal = window.LeadModal || (() => null);
   // Apply tweaks to CSS vars
   useEffect(() => {
     const r = document.documentElement.style;
@@ -587,7 +588,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <LeadProvider>
       <Nav />
       <Hero />
       <Services />
@@ -598,6 +599,7 @@ function App() {
       <About />
       <CTAFinal />
       <Footer />
+      <Modal />
       <button id="scrollTopBtn" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
   ↑
 </button>
@@ -608,7 +610,7 @@ function App() {
           {/* ... */}
         </window.TweaksPanel>
       )}
-    </>
+    </LeadProvider>
   );
 }
 
