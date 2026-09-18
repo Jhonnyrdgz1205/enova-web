@@ -959,13 +959,13 @@ section { position: relative; }
   background: var(--green);
   color: var(--ink);
 
-  border: none;
   border-radius: 50%;
+  border: none;
 
   font-size: 24px;
   cursor: pointer;
 
-  box-shadow: 0 4px 20px rgba(0,0,0,.12);
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
 
   opacity: 0;
   visibility: hidden;
@@ -973,9 +973,9 @@ section { position: relative; }
   transform: translateY(12px);
 
   transition:
-    opacity .32s ease,
-    transform .32s ease,
-    background .25s ease;
+    opacity .3s ease,
+    transform .3s ease,
+    visibility .3s ease;
 
   z-index: 999;
 }
@@ -987,6 +987,5 @@ section { position: relative; }
 }
 
 #scrollTopBtn:hover {
-  background: #d0fa59;
   transform: translateY(-2px);
 }
