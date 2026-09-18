@@ -462,10 +462,10 @@ function About() {
           <div className="about-text">
             <div className="eyebrow eyebrow-dot" style={{marginBottom: 28}}>Sobre Enova</div>
             <h2>Aliados en la <em>transición energética</em> de El Salvador.</h2>
-            <p> Sabemos que no te gusta pagar de más por tu electricidad. Que queres aprovechar mejor tu dinero, tener más control de lo que consumís y dejar de depender de una energía que no podes controlar.<br/><br/>
+            <p> Sabemos que no te gusta pagar de más por tu electricidad. Que quieres aprovechar mejor tu dinero, tener más control de lo que consumes y dejar de depender de una energía que no puedes controlar.<br/><br/>
               Por eso existimos.<br/><br/>
-              En ENOVA diseñamos e instalamos sistemas solares a la medida para que generés tu propia energía, reduzcas tus costos y ganes autonomía de tu espacio.<br/> <br/>
-              Porque para nosotros, la transición energética no es solo cambiar de dónde viene la electricidad. Es ayudarte a tomar una mejor decisión con los recursos que ya tenés.
+              En ENOVA diseñamos e instalamos sistemas solares a la medida para que generes tu propia energía, reduzcas tus costos y ganes autonomía de tu espacio.<br/> <br/>
+              Porque para nosotros, la transición energética no es solo cambiar de dónde viene la electricidad. Es ayudarte a tomar una mejor decisión con los recursos que ya tienes.
             </p>
             <div className="about-stats">
               <div className="about-stat">
