@@ -832,7 +832,7 @@ function App() {
           {/* ... */}
         </window.TweaksPanel>
       )}
-    </LeadProvider>
+    </LeadModalProvider>
   );
 }
 
