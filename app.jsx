@@ -465,7 +465,7 @@ function About() {
             <p> Sabemos que no te gusta pagar de más por tu electricidad. Que queres aprovechar mejor tu dinero, tener más control de lo que consumís y dejar de depender de una energía que no podes controlar.<br/><br/>
               Por eso existimos.<br/><br/>
               En ENOVA diseñamos e instalamos sistemas solares a la medida para que generés tu propia energía, reduzcas tus costos y ganes autonomía de tu espacio.<br/> <br/>
-              Porque para nosotros, la transición energética no es solo cambiar de dónde viene la electricidad. Es ayudarte a tomar una mejor decisión con los recursos que ya tenes.
+              Porque para nosotros, la transición energética no es solo cambiar de dónde viene la electricidad. Es ayudarte a tomar una mejor decisión con los recursos que ya tenés.
             </p>
             <div className="about-stats">
               <div className="about-stat">
