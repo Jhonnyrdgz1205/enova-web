@@ -973,9 +973,9 @@ section { position: relative; }
   transform: translateY(12px);
 
   transition:
-    opacity .3s ease,
-    transform .3s ease,
-    visibility .3s ease;
+    opacity .55s ease,
+    transform .55s ease,
+    visibility .55s ease;
 
   z-index: 999;
 }
