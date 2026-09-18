@@ -82,7 +82,7 @@ function Nav() {
           <a href="#calculadora">Ahorro</a>
           <a href="#sobre">Sobre nosotros</a>
         </div>
-        <a href="## => { e.preventDefault(); openLeadModal('Navbar'); }}>" className="nav-cta">
+        <a href="# => { e.preventDefault(); openLeadModal('Navbar'); }}>
           Cotizar <Arrow size={12} /></a>
       </div>
     </nav>
