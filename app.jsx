@@ -1,6 +1,214 @@
 /* global React */
 const { useState, useEffect, useRef } = React;
 
+// ===== LEAD MODAL =====
+
+const LeadModalContext = React.createContext(null);
+
+function LeadModalProvider({ children }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [source, setSource] = useState('');
+
+  const openLeadModal = (sourceName = 'Website') => {
+    setSource(sourceName);
+    setIsOpen(true);
+  };
+
+  const closeLeadModal = () => {
+    setIsOpen(false);
+  };
+
+  return (
+    <LeadModalContext.Provider
+      value={{
+        isOpen,
+        source,
+        openLeadModal,
+        closeLeadModal
+      }}
+    >
+      {children}
+    </LeadModalContext.Provider>
+  );
+}
+
+function useLeadModal() {
+  return React.useContext(LeadModalContext);
+}
+
+
+// ===== LEAD MODAL UI =====
+
+function LeadModal() {
+  const { isOpen, closeLeadModal, source } = useLeadModal();
+
+  const [form, setForm] = useState({
+    name: '',
+    company: '',
+    phone: '',
+    email: '',
+    type: 'Residencial',
+    message: ''
+  });
+
+  if (!isOpen) return null;
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const text = `
+Hola ENOVA, quiero solicitar una cotización.
+
+Nombre: ${form.name}
+Empresa / proyecto: ${form.company || 'No aplica'}
+Teléfono: ${form.phone}
+Correo: ${form.email}
+Tipo de proyecto: ${form.type}
+Mensaje: ${form.message || 'Quisiera conocer una propuesta para mi proyecto.'}
+
+Origen: ${source}
+    `.trim();
+
+    const whatsappUrl =
+      `https://wa.me/50372852227?text=${encodeURIComponent(text)}`;
+
+    window.open(whatsappUrl, '_blank');
+
+    closeLeadModal();
+  };
+
+  return (
+    <div className="lead-modal-backdrop" onClick={closeLeadModal}>
+      <div
+        className="lead-modal"
+        onClick={(e) => e.stopPropagation()}
+      >
+
+        <button
+          className="lead-modal-close"
+          onClick={closeLeadModal}
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
+
+        <div className="eyebrow eyebrow-dot">
+          Hablemos de tu proyecto
+        </div>
+
+        <h2>
+          Empezá a hacer que el sol
+          <em> trabaje para vos.</em>
+        </h2>
+
+        <p className="lead-modal-intro">
+          Contanos un poco sobre tu proyecto y te contactaremos
+          para preparar una propuesta a tu medida.
+        </p>
+
+        <form onSubmit={handleSubmit}>
+
+          <div className="lead-form-grid">
+
+            <div className="lead-field">
+              <label>Nombre</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Tu nombre"
+                value={form.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            <div className="lead-field">
+              <label>Teléfono</label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="+503 0000 0000"
+                value={form.phone}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            <div className="lead-field">
+              <label>Correo electrónico</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="tu@email.com"
+                value={form.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            <div className="lead-field">
+              <label>Empresa / proyecto</label>
+              <input
+                type="text"
+                name="company"
+                placeholder="Opcional"
+                value={form.company}
+                onChange={handleChange}
+              />
+            </div>
+
+          </div>
+
+          <div className="lead-field">
+            <label>Tipo de proyecto</label>
+
+            <select
+              name="type"
+              value={form.type}
+              onChange={handleChange}
+            >
+              <option>Residencial</option>
+              <option>Comercial</option>
+              <option>Industrial</option>
+            </select>
+          </div>
+
+          <div className="lead-field">
+            <label>Contanos sobre tu proyecto</label>
+
+            <textarea
+              name="message"
+              placeholder="Por ejemplo: consumo mensual aproximado, ubicación, tamaño del proyecto..."
+              value={form.message}
+              onChange={handleChange}
+              rows="3"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="btn btn-primary lead-submit"
+          >
+            Solicitar cotización <Arrow />
+          </button>
+
+          <p className="lead-modal-note">
+            Al enviar, se abrirá WhatsApp para completar el contacto con ENOVA.
+          </p>
+
+        </form>
+      </div>
+    </div>
+  );
+}
+
 // ===== Helper: scroll reveal =====
 function useReveal() {
   useEffect(() => {
@@ -64,9 +272,7 @@ function Brand() {
 // ===== NAV =====
 function Nav() {
   const [scrolled, setScrolled] = useState(false);
-  const { openLeadModal } = window.useLeadModal
-    ? window.useLeadModal()
-    : { openLeadModal: () => {} };
+  const { openLeadModal } = useLeadModal();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -577,9 +783,11 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
 
 function App() {
   useReveal();
-  const [tweaks, setTweak] = window.useTweaks ? window.useTweaks(TWEAK_DEFAULTS) : [TWEAK_DEFAULTS, () => {}];
-  const LeadProvider = window.LeadModalProvider || (({ children }) => children);
-  const Modal = window.LeadModal || (() => null);
+
+  const [tweaks, setTweak] = window.useTweaks
+    ? window.useTweaks(TWEAK_DEFAULTS)
+    : [TWEAK_DEFAULTS, () => {}];
+  
   // Apply tweaks to CSS vars
   useEffect(() => {
     const r = document.documentElement.style;
@@ -602,7 +810,7 @@ function App() {
   }, []);
 
   return (
-    <LeadProvider>
+    <LeadModalProvider>
       <Nav />
       <Hero />
       <Services />
@@ -613,7 +821,7 @@ function App() {
       <About />
       <CTAFinal />
       <Footer />
-      <Modal />
+      <LeadModal />
       <button id="scrollTopBtn" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
   ↑
 </button>
