@@ -64,6 +64,7 @@ function Brand() {
 // ===== NAV =====
 function Nav() {
   const [scrolled, setScrolled] = useState(false);
+  const { openLeadModal } = window.useLeadModal ? window.useLeadModal() : { openLeadModal: () => {} };
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     window.addEventListener('scroll', onScroll);
@@ -81,7 +82,7 @@ function Nav() {
           <a href="#calculadora">Ahorro</a>
           <a href="#sobre">Sobre nosotros</a>
         </div>
-        <a href="#contacto" className="nav-cta">
+        <a href="#" className="nav-cta" onClick={(e) => { e.preventDefault(); openLeadModal('Navbar'); }}>
           Cotizar <Arrow size={12} />
         </a>
       </div>
@@ -91,6 +92,7 @@ function Nav() {
 
 // ===== HERO =====
 function Hero() {
+const { openLeadModal } = window.useLeadModal ? window.useLeadModal() : { openLeadModal: () => {} };
   return (
     <section className="hero">
       <div className="shell">
@@ -331,6 +333,7 @@ function Projects() {
 
 // ===== Calculadora =====
 function Calculator() {
+  const { openLeadModal } = window.useLeadModal ? window.useLeadModal() : { openLeadModal: () => {} };
   // Rangos, cobertura de ahorro y paso del slider por categoría.
   // Rate promedio SV ~$0.22/kWh; producción ~130 kWh/mes por kWp instalado.
   const RANGES = {
@@ -490,6 +493,7 @@ function About() {
 
 // ===== CTA Final =====
 function CTAFinal() {
+  const { openLeadModal } = window.useLeadModal ? window.useLeadModal() : { openLeadModal: () => {} };
   return (
     <section className="cta-final" id="contacto">
       <div className="shell">
@@ -586,8 +590,11 @@ function App() {
     return () => window.removeEventListener("scroll", toggleBtn);
   }, []);
 
+  const LeadProvider = window.LeadModalProvider || (({ children }) => children);
+  const Modal = window.LeadModal || (() => null);
+
   return (
-    <>
+    <LeadProvider>
       <Nav />
       <Hero />
       <Services />
@@ -598,6 +605,7 @@ function App() {
       <About />
       <CTAFinal />
       <Footer />
+      <Modal />
       <button id="scrollTopBtn" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
   ↑
 </button>
@@ -608,7 +616,7 @@ function App() {
           {/* ... */}
         </window.TweaksPanel>
       )}
-    </>
+    <LeadProvider />
   );
 }
 
