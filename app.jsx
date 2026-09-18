@@ -64,16 +64,23 @@ function Brand() {
 // ===== NAV =====
 function Nav() {
   const [scrolled, setScrolled] = useState(false);
-  const { openLeadModal } = window.useLeadModal ? window.useLeadModal() : { openLeadModal: () => {} };
+  const { openLeadModal } = window.useLeadModal
+    ? window.useLeadModal()
+    : { openLeadModal: () => {} };
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
+
     window.addEventListener('scroll', onScroll);
+
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
   return (
     <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
       <div className="shell">
         <Brand />
+
         <div className="nav-links">
           <a href="#servicios">Servicios</a>
           <a href="#proceso">Proceso</a>
@@ -82,13 +89,20 @@ function Nav() {
           <a href="#calculadora">Ahorro</a>
           <a href="#sobre">Sobre nosotros</a>
         </div>
-        <a href="# => { e.preventDefault(); openLeadModal('Navbar'); }}>
-          Cotizar <Arrow size={12} /></a>
+
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            openLeadModal('Navbar');
+          }}
+        >
+          Cotizar <Arrow size={12} />
+        </a>
       </div>
     </nav>
   );
 }
-
 // ===== HERO =====
 function Hero() {
   return (
