@@ -79,7 +79,7 @@ function Nav() {
           <a href="#impacto">Impacto</a>
           <a href="#proyectos">Proyectos</a>
           <a href="#calculadora">Ahorro</a>
-          <a href="#sobre">Sobre Enova</a>
+          <a href="#sobre">Sobre nosotros</a>
         </div>
         <a href="#contacto" className="nav-cta">
           Cotizar <Arrow size={12} />
@@ -462,8 +462,15 @@ function About() {
           <div className="about-text">
             <div className="eyebrow eyebrow-dot" style={{marginBottom: 28}}>Sobre Enova</div>
             <h2>Aliados en la <em>transición energética</em> de El Salvador.</h2>
-            <p>
-              Diseñamos e implementamos proyectos solares pensados para durar. Trabajamos con marcas tier-1, ingeniería propia y una obsesión por la eficiencia: cada watt importa.
+            <p> Sabemos que no te gusta pagar facturas de electricidad cada vez más altas. Que quieres aprovechar mejor tu dinero, tener más control sobre lo que consumes y dejar de depender por completo de una energía que no puedes controlar.
+              
+              Por eso existimos.
+              
+              En ENOVA diseñamos e instalamos sistemas solares a la medida de hogares y empresas que quieren hacer las cosas de una forma más inteligente: generar parte de su propia energía, reducir sus costos y ganar autonomía sin complicarse la vida.
+              
+              Nos encargamos de todo el camino, desde el diseño y la selección de equipos hasta la instalación, puesta en marcha y acompañamiento de tu sistema.
+              
+              Porque para nosotros, la transición energética no es solo cambiar de dónde viene la electricidad. Es ayudarte a tomar una mejor decisión con los recursos que ya tienes.
             </p>
             <p>
               No vendemos paneles. Vendemos autonomía, predictibilidad y un compromiso con el planeta que se mide en kilos de carbono.
