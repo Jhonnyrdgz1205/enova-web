@@ -462,7 +462,7 @@ function About() {
           <div className="about-text">
             <div className="eyebrow eyebrow-dot" style={{marginBottom: 28}}>Sobre Enova</div>
             <h2>Aliados en la <em>transición energética</em> de El Salvador.</h2>
-            <p> Sabemos que no te gusta pagar facturas de electricidad cada vez más altas. Que queres aprovechar mejor tu dinero, tener más control sobre lo que consumes y dejar de depender por completo de una energía que no puedes controlar.<br/><br/>
+            <p> Sabemos que no te gusta pagar facturas de electricidad cada vez más altas. Que queres aprovechar mejor tu dinero, tener más control sobre lo que consumís y dejar de depender de una energía que no podes controlar.<br/><br/>
               Por eso existimos.<br/><br/>
               En ENOVA diseñamos e instalamos sistemas solares a la medida de hogares y empresas que quieren hacer las cosas de una forma más inteligente: generar su propia energía, reducir sus costos y ganar autonomía de su espacio.<br/> <br/>
               Porque para nosotros, la transición energética no es solo cambiar de dónde viene la electricidad. Es ayudarte a tomar una mejor decisión con los recursos que ya tenes.
@@ -495,11 +495,11 @@ function CTAFinal() {
       <div className="shell">
         <div className="eyebrow eyebrow-dot" style={{marginBottom: 32}}>Contacto</div>
         <h2 className="reveal">
-          Hagamos tu próxima<br/>factura <em>la última.</em>
+          Quisieras <em>pagar menos</em><br/>en tu próxima factura.
         </h2>
         <div style={{display:'flex', gap:14, justifyContent:'center', flexWrap:'wrap'}} className="reveal">
           <a href="mailto:info@enova-sv.com" className="btn btn-primary">
-            Solicitar cotización <Arrow/>
+            Contactános <Arrow/>
           </a>
           <a href="https://wa.me/50372852227" className="btn btn-ghost">
             WhatsApp directo
