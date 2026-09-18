@@ -125,8 +125,8 @@ function Hero() {
           <img src="/Inspo portada oferta.webp" alt="Campo verde al atardecer" />
           <div className="overlay"></div>
           <div className="hero-image-meta">
-            <span>El Salvador · Santa Ana</span>
-            <span>16.10 kWp instalados — 79% cobertura</span>
+            <span>Instalación Agrivoltaica</span>
+            <span>Ejemplo de aplicación</span>
           </div>
         </div>
       </div>
