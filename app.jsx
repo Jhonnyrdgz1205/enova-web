@@ -578,9 +578,10 @@ function App() {
   useEffect(() => {
     const btn = document.getElementById("scrollTopBtn");
     const toggleBtn = () => {
-      if (window.scrollY > 200) { btn.classList.add("visible");} 
+      if (window.scrollY > 400) { btn.classList.add("visible");} 
       else {btn.classList.remove("visible");
-           };
+           }
+    };
     window.addEventListener("scroll", toggleBtn);
     return () => window.removeEventListener("scroll", toggleBtn);
   }, []);
