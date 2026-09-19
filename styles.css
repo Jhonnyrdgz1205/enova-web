@@ -1146,3 +1146,7 @@ section { position: relative; }
     font-size: 28px;
   }
 }
+
+* {
+  outline: 1px solid red !important;
+}
