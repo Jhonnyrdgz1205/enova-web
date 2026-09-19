@@ -1006,7 +1006,7 @@ section { position: relative; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 24px;
+  padding: 60px 24px;
   overflow-y: auto;
   animation: leadFadeIn .2s ease;
 }
@@ -1028,7 +1028,7 @@ section { position: relative; }
 .lead-close {
   position: absolute;
   top: 18px; right: 18px;
-  width: 32px; height: 32px;
+  width: 42px; height: 42px;
   border-radius: 50%;
   display: grid;
   place-items: center;
