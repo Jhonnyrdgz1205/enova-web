@@ -1006,7 +1006,7 @@ section { position: relative; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 24px;
+  padding: 85px 24px;
   overflow-y: auto;
   animation: leadFadeIn .2s ease;
 }
@@ -1145,8 +1145,4 @@ section { position: relative; }
   .lead-head h3 {
     font-size: 28px;
   }
-}
-
-* {
-  outline: 1px solid red !important;
 }
