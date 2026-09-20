@@ -1122,7 +1122,7 @@ section { position: relative; }
   padding: 10px 16px;
   border-radius: 999px;
   border: 1px solid var(--line-soft);
-  color: var(--ink-soft);
+  color: var(--ink);
 }
 .lead-file-btn:hover { border-color: var(--ink); background: var(--bg-alt); }
 .lead-file-input:focus-visible + .lead-file-btn,
