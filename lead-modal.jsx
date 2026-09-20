@@ -183,7 +183,7 @@ function LeadModal() {
             <div className="lead-head">
               <div className="eyebrow eyebrow-dot">Cotización personalizada</div>
               <h3>Cuéntanos de tu proyecto</h3>
-              <p>Un ingeniero de Enova revisará tu caso y te contactará con una propuesta a la medida.</p>
+              <p>Uno de nuestros asesores te contactará en un plazo menor de 24 horas.</p>
             </div>
 
             <form className="lead-form" onSubmit={handleSubmit}>
