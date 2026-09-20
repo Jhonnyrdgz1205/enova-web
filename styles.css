@@ -527,9 +527,9 @@ section { position: relative; }
 
 /* ===== Nuestra promesa (dentro de Impacto) ===== */
 .promise {
-  margin-top: 72px;
-  padding-top: 56px;
-  border-top: 1px solid var(--line-soft);
+  margin-top: 0px;
+  padding-top: 0px;
+  border-top: none;
 }
 
 .promise-title {
