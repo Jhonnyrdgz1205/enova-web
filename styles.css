@@ -1004,9 +1004,9 @@ section { position: relative; }
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 24px;
+  padding: 60px 24px 40px;
   overflow-y: auto;
   animation: leadFadeIn .2s ease;
 }
@@ -1017,7 +1017,7 @@ section { position: relative; }
   background: var(--bg);
   color: var(--ink);
   width: 100%;
-  max-width: 520px;
+  max-width: 620px;
   border-radius: 14px;
   padding: 44px;
   box-shadow: 0 32px 64px -24px rgba(0,0,0,0.35);
@@ -1033,7 +1033,7 @@ section { position: relative; }
   display: grid;
   place-items: center;
   color: var(--ink-mute);
-  font-size: 14px;
+  font-size: 17px;
   transition: background .2s, color .2s;
 }
 .lead-close:hover { background: var(--bg-alt); color: var(--ink); }
