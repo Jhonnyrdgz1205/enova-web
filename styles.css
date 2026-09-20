@@ -1017,7 +1017,7 @@ section { position: relative; }
   background: var(--bg);
   color: var(--ink);
   width: 100%;
-  max-width: 620px;
+  max-width: 630px;
   border-radius: 14px;
   padding: 44px;
   box-shadow: 0 32px 64px -24px rgba(0,0,0,0.35);
