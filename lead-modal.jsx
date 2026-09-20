@@ -251,7 +251,7 @@ function LeadModal() {
                   )}
                 </div>
                 {archivoError && <span className="lead-error">{archivoError}</span>}
-                <span className="lead-hint">Nos ayuda a preparar una propuesta más precisa. Máx. 8MB.</span>
+                <span className="lead-hint">Nos ayuda a preparar una propuesta más precisa.</span>
               </div>
 
               {status === 'error' && (
