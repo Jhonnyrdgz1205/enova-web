@@ -274,7 +274,7 @@ function Impact() {
         </div>
 
         <div className="promise reveal">
-          <h3 className="promise-title">Nuestra promesa</h3>
+          <h2>Nuestra <em>promesa.</em></h2>
           <div className="promise-grid">
             {promises.map((p, i) => (
               <div className="promise-card" key={i}>
