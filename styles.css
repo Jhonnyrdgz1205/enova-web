@@ -1115,14 +1115,14 @@ section { position: relative; }
 .lead-file-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  font-family: var(--sans);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 10px 16px;
   border-radius: 999px;
   border: 1px solid var(--line-soft);
-  color: var(--ink);
-  cursor: pointer;
-  transition: border-color .2s, background .2s;
+  color: var(--ink-soft);
 }
 .lead-file-btn:hover { border-color: var(--ink); background: var(--bg-alt); }
 .lead-file-input:focus-visible + .lead-file-btn,
