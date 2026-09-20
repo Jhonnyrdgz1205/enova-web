@@ -253,6 +253,19 @@ function Impact() {
   return (
     <section className="section impact" id="impacto">
       <div className="shell">
+        <div className="promise reveal">
+          <h2 className="promise-title">Nuestra <em> promesa.</em></h2>
+          <div className="promise-grid">
+            {promises.map((p, i) => (
+              <div className="promise-card" key={i}>
+                <div className="promise-img">
+                  <img src={p.img} alt={p.alt} />
+                </div>
+                <p className="promise-caption">{p.caption}</p>
+              </div>
+            ))}
+          </div>
+        </div>
         <div className="section-head reveal">
           <div>
             <div className="eyebrow eyebrow-dot" style={{marginBottom: 24}}>Impacto medible</div>
@@ -273,19 +286,7 @@ function Impact() {
           ))}
         </div>
 
-        <div className="promise reveal">
-          <h2 className="promise-title">Nuestra <em> promesa.</em></h2>
-          <div className="promise-grid">
-            {promises.map((p, i) => (
-              <div className="promise-card" key={i}>
-                <div className="promise-img">
-                  <img src={p.img} alt={p.alt} />
-                </div>
-                <p className="promise-caption">{p.caption}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        
       </div>
     </section>
   );
