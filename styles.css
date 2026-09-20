@@ -531,14 +531,10 @@ section { position: relative; }
   padding-top: 56px;
   border-top: 1px solid var(--line-soft);
 }
-.promise-title {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: clamp(28px, 3.5vw, 40px);
-  letter-spacing: -0.01em;
-  color: var(--ink);
-  margin-bottom: 32px;
+
+.promise h2 em { color: var(--green); font-style: italic; 
 }
+
 .promise-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
