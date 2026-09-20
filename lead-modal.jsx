@@ -3,7 +3,7 @@ const { createContext, useContext, useState, useCallback, useEffect } = React;
 
 // ⚠️ Pega aquí la URL de tu Web App de Google Apps Script.
 // Ver GUIA-IMPLEMENTACION.md, sección 1.
-const ENOVA_LEADS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzSUbKMMNc27_4ZgGIJMdxV4HsMSy5NpsYHeNnXJk_n1cAegGkKHg07OX0tZP4e0iSBEg/exec';
+const ENOVA_LEADS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyWS8FqWTz5MvTTS9i5hd8RhTzv3uBq_z4IPam6r9_DEu29uENzYCi3N2G4OakbTXCxqQ/exec';
 
 const TIPOS = ['residencial', 'comercial', 'industrial'];
 const FILE_MAX_BYTES = 8 * 1024 * 1024; // 8MB
