@@ -532,7 +532,18 @@ section { position: relative; }
   border-top: 1px solid var(--line-soft);
 }
 
-.promise h2 em { color: var(--green); font-style: italic; 
+.promise-title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(40px, 5vw, 76px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;  
+}
+
+.promise-title em {
+  font-style: italic;
+  color: var(--green);
 }
 
 .promise-grid {
