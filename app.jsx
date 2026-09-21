@@ -267,7 +267,7 @@ function Impact() {
             ))}
           </div>
         </div>
-        <div className="section-head reveal">
+        <div className="section-head reveal" style={{ marginTop: '80px' }}>
           <div>
             <h2>Cada panel<em> cuenta.</em></h2>
           </div>
