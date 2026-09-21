@@ -253,6 +253,7 @@ function Impact() {
   return (
     <section className="section impact" id="impacto">
       <div className="shell">
+        <div className="eyebrow eyebrow-dot" style={{marginBottom: 24}}>Impacto medible</div>
         <div className="promise reveal">
           <h2 className="promise-title">Nuestra <em> promesa.</em></h2>
           <div className="promise-grid">
@@ -268,7 +269,6 @@ function Impact() {
         </div>
         <div className="section-head reveal">
           <div>
-            <div className="eyebrow eyebrow-dot" style={{marginBottom: 24}}>Impacto medible</div>
             <h2>Cada panel<br/><em>cuenta.</em></h2>
           </div>
           <p className="lede">
