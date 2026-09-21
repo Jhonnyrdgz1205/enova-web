@@ -240,12 +240,12 @@ function Impact() {
   const promises = [
     {
       img: 'Promesa 1.jpg',
-      alt: 'Reforestación por cada kW instalado',
+      alt: 'Reforestación por cada kW instalado en El Salvador',
       caption: 'Por cada 1kW instalado nosotros sembramos 1 árbol',
     },
     {
-      img: 'images/promesa-2.jpg',
-      alt: 'Limpieza de calles y ríos por cada kW instalado',
+      img: 'Promesa 2.jpg',
+      alt: 'Limpieza de calles y ríos por cada kW instalado en El Salvador',
       caption: 'Por cada 1kW instalado, nosotros levantamos 1 libra de basura de las calles y de los ríos del país',
     },
   ];
