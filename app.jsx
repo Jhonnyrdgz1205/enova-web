@@ -493,7 +493,7 @@ function CTAFinal() {
       <div className="shell">
         <div className="eyebrow eyebrow-dot" style={{marginBottom: 32}}>Contacto</div>
         <h2 className="reveal">
-          ¿Quisieras <em>pagar menos</em><br/>en tu próxima factura?
+          ¿Quisieras <em className="no-wrap">pagar menos</em><br/>en tu próxima factura?
         </h2>
         <div style={{display:'flex', gap:14, justifyContent:'center', flexWrap:'wrap'}} className="reveal">
           <a href="#" className="btn btn-primary" onClick={(e) => { e.preventDefault(); openLeadModal('CTA Final'); }}>
