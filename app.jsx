@@ -542,7 +542,7 @@ function Footer() {
         </div>
         <div className="footer-bottom">
           <span>© Enova S.A.S. de C.V. Todos los derechos reservados</span>
-          <span>Anthropic @ Claude       </span>
+          <span>Anthropic @ Claude</span>
         </div>
       </div>
     </footer>
