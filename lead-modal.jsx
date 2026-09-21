@@ -38,6 +38,7 @@ function LeadModalProvider({ children }) {
   }, []);
 
   const closeLeadModal = useCallback(() => {
+    if (window.gtag) gtag('event', 'lead_modal_open');
     setState((s) => ({ ...s, open: false }));
   }, []);
 
