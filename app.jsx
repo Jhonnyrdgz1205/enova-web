@@ -267,15 +267,7 @@ function Impact() {
             ))}
           </div>
         </div>
-        <div className="section-head reveal" style={{ marginTop: '80px' }}>
-          <div>
-            <h2>Cada panel<em> cuenta.</em></h2>
-          </div>
-          <p className="lede">
-            La energía solar no es solo ahorro. Es una manera concreta de reducir emisiones, proyectada en 25 años de operación.
-          </p>
-        </div>
-
+        
         <div className="impact-grid reveal">
           {stats.map((s, i) => (
             <div className="impact-card" key={i}>
