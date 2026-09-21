@@ -1220,3 +1220,6 @@ section { position: relative; }
     font-size: 28px;
   }
 }
+.no-wrap {
+  white-space: nowrap;
+}
