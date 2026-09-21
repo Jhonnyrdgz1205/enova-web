@@ -454,7 +454,7 @@ function About() {
       <div className="shell">
         <div className="about-grid reveal">
           <div className="about-img">
-            <img src="images/seedling.png" alt="Naturaleza" />
+            <img src="Aliados.jpeg" alt="CEO Enova Jhonatan Rodríguez" />
           </div>
           <div className="about-text">
             <div className="eyebrow eyebrow-dot" style={{marginBottom: 28}}>Sobre Enova</div>
