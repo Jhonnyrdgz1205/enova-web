@@ -239,7 +239,7 @@ function Impact() {
 
   const promises = [
     {
-      img: 'images/promesa-1.jpg',
+      img: 'Promesa 1.jpg',
       alt: 'Reforestación por cada kW instalado',
       caption: 'Por cada 1kW instalado nosotros sembramos 1 árbol',
     },
