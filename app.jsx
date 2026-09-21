@@ -298,7 +298,7 @@ function Projects() {
         <div className="section-head reveal">
           <div>
             <div className="eyebrow eyebrow-dot" style={{marginBottom: 24}}>Proyectos</div>
-            <h2>Trabajos<br/>ya <em>produciendo.</em></h2>
+            <h2>Trabajos ya<br/><em>produciendo.</em></h2>
           </div>
           <p className="lede">
             Una muestra de los sistemas que hemos diseñado e instalado a lo largo de El Salvador. Cada uno hecho a medida.
