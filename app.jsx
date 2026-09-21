@@ -246,7 +246,7 @@ function Impact() {
     {
       img: 'Promesa 2.jpg',
       alt: 'Limpieza de calles y ríos por cada kW instalado en El Salvador',
-      caption: 'Por cada 1kW instalado, nosotros levantamos 1 libra de basura de las calles y de los ríos del país',
+      caption: 'Por cada 2kW instalado, nosotros levantamos 1 libra de basura de las calles y de los ríos',
     },
   ];
 
