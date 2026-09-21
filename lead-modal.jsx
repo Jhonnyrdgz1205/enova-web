@@ -159,6 +159,7 @@ function LeadModal() {
         headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify(payload),
       });
+      if (window.gtag) gtag('event', 'lead_submit');
       setStatus('success');
     } catch (err) {
       console.error('Error enviando lead:', err);
