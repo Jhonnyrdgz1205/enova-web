@@ -124,7 +124,7 @@ function Hero() {
         </div>
 
         <div className="hero-image reveal">
-          <img src="/Inspo portada oferta.webp" alt="Campo verde al atardecer" />
+          <img src="/Foto Hero.webp" alt="Campo verde al atardecer" />
           <div className="overlay"></div>
           <div className="hero-image-meta">
             <span>Instalación Agrivoltaica</span>
