@@ -82,7 +82,8 @@ function Nav() {
           <a href="#calculadora">Ahorro</a>
           <a href="#sobre">Sobre nosotros</a>
         </div>
-        <a href="#" className="nav-cta" onClick={(e) => { e.preventDefault(); openLeadModal('Navbar'); }}>
+        <a href="#" className="nav-cta" onClick={(e) => { e.preventDefault(); if (window.gtag) gtag('event', 'cotizar_click');
+openLeadModal('Navbar'); }}>
           Cotizar <Arrow size={12} />
         </a>
       </div>
@@ -496,10 +497,11 @@ function CTAFinal() {
           ¿Quisieras <em className="no-wrap">pagar menos</em><br/>en tu próxima factura?
         </h2>
         <div style={{display:'flex', gap:14, justifyContent:'center', flexWrap:'wrap'}} className="reveal">
-          <a href="#" className="btn btn-primary" onClick={(e) => { e.preventDefault(); openLeadModal('CTA Final'); }}>
+          <a href="#" className="btn btn-primary" onClick={(e) => { e.preventDefault(); if (window.gtag) gtag('event', 'contacto_click');
+openLeadModal('CTA Final'); }}>
             Contactános <Arrow/>
           </a>
-          <a href="https://wa.me/50372852227" className="btn btn-ghost">
+          <a href="https://wa.me/50372852227" className="btn btn-ghost" onClick={() => { if (window.gtag) gtag('event', 'whatsapp_click'); }}>
             WhatsApp directo
           </a>
         </div>
