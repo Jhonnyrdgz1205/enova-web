@@ -570,7 +570,7 @@ section { position: relative; }
 }
 .promise-caption {
   margin-top: 18px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   color: var(--ink-soft);
   max-width: 92%;
