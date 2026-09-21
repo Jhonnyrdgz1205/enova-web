@@ -481,7 +481,7 @@ section { position: relative; }
   background: var(--paper);
   position: relative;
   overflow: hidden
-  padding-top: 40px;;
+  padding-top: 20px;;
 }
 .impact-grid {
   display: grid;
