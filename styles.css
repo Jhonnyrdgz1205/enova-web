@@ -577,7 +577,7 @@ section { position: relative; }
 }
 
 @media (max-width: 880px) {
-  .promise { margin-top: 48px; padding-top: 40px; }
+  .promise { margin-top: 0px; padding-top: 0px; }
   .promise-grid { grid-template-columns: 1fr; }
 }
 
