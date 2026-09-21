@@ -269,7 +269,7 @@ function Impact() {
         </div>
         <div className="section-head reveal">
           <div>
-            <h2>Cada panel<br/><em>cuenta.</em></h2>
+            <h3>Cada panel<em> cuenta.</em></h3>
           </div>
           <p className="lede">
             La energía solar no es solo ahorro. Es una manera concreta de reducir emisiones, proyectada en 25 años de operación.
